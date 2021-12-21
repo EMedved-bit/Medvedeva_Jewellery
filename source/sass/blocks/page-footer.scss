@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: $black;
+  margin-top: auto;
+  padding: 100px 0;
+
+  @media (max-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.page-footer__wrapper {
+  padding: 0 98px;
+  max-width: 1366px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+    margin: 0;
+    max-width: 650px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+}
+
+.page-footer__form {
+  max-width: 500px;
+  flex-grow: 1;
+
+  @media (max-width: $desktop-width) {
+    max-width: 650px;
+    margin-bottom: 50px;
+  }
+}
