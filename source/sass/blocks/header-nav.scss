@@ -1,0 +1,35 @@
+.header-nav {
+  padding: 18px 0;
+  border-top: 1px solid $light;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header-nav__list {
+  list-style: none;
+  max-width: 1366px;
+  padding: 0 98px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav__item {
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.header-nav__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gold;
+  }
+}
